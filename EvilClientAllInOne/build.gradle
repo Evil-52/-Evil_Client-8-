@@ -1,0 +1,28 @@
+plugins {
+    id 'fabric-loom' version '1.0-SNAPSHOT' apply false
+    id 'java'
+    id 'maven-publish'
+}
+
+group = 'com.evilclient'
+version = '0.1.0'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.fabricmc.net/' }
+}
+
+dependencies {
+    minecraft 'com.mojang:minecraft:1.21'
+    mappings 'net.fabricmc:yarn:1.21+build.1:v2'
+    modImplementation 'net.fabricmc:fabric-loader:0.15.11'
+    modImplementation 'net.fabricmc.fabric-api:fabric-api:0.100.8+1.21'
+    // client-only libraries may be added if needed
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+    withSourcesJar()
+}

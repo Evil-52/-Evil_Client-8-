@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "evilclient_allinone",
+  "version": "0.1.0",
+  "name": "Evil Client All-in-One",
+  "description": "Custom client with FPS, Keystrokes, CPS, ToggleSprint, Zoom, Potion HUD, Ping, Speed, Motion Blur, BossBar toggle.",
+  "authors": [
+    "M Omer",
+    "ChatGPT"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/evilclient_allinone/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.evilclient.EvilClientMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "1.21.x",
+    "fabric-api": "*"
+  }
+}
